@@ -1,0 +1,61 @@
+QMainWindow{
+    background: white;
+}
+QPlainTextEdit{
+	background-color:rgb(39,40,34);
+	color:#FFFFFF;
+}
+
+
+QTabBar{
+	color:lightblack;
+
+}
+
+QTabBar::tab {
+	width: 120px;
+	height: 20px;
+}
+QTabBar::tab:selected {
+	color:blue;
+}
+QTabBar::tab:hover{
+	color:blue;
+}
+QSplitter::handle {
+   background: white;
+}
+
+QSplitter::handle:horizontal {
+    width: 1px;
+}
+
+QSplitter::handle:vertical {
+    height: 1px;
+ }
+
+ QSplitter::handle:pressed {
+    background: white;
+}
+
+QTreeView::branch:has-siblings:!adjoins-item {
+    border-image: url(vline.png) 0;
+}
+
+QTreeView::branch:has-siblings:adjoins-item {
+    border-image: url(style/branch-more.png) 0;
+}
+
+QTreeView::branch:!has-children:!has-siblings:adjoins-item {
+    border-image: url(style/branch-end.png) 0;
+}
+
+QTreeView::branch:has-children:!has-siblings:closed,QTreeView::branch:closed:has-children:has-siblings {
+        border-image: none;
+        image: url(style/branch-closed.png);
+}
+
+QTreeView::branch:open:has-children:!has-siblings,QTreeView::branch:open:has-children:has-siblings  {
+        border-image: none;
+        image: url(style/branch-open.png);
+}
